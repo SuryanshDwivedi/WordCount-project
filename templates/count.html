@@ -1,0 +1,8 @@
+<h1> hello count</h1>
+There are {{wordy}} word in this sentence
+<br />
+<a href="{% url 'home' %}">go back</a>
+{% for word,count in worddict%}
+{{word}}-{{count}}
+<br />
+{% endfor %}
